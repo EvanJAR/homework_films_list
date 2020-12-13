@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="homework_wk6/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="homework_wk6/css/main.css" />
+    <title>Film Lists</title>
+</head>
+<body>
+    <h1>Tell Us What Movies You've Watched:</h1>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+          <div class="form-item">
+            <label for="title" class="primary">Title</label>
+            <input type="text" id="title" required/>
+          </div>
+  
+          <div class="form-item">
+            <label for="certificate" class="primary">Certificate:</label>
+            <select id="certificate">
+              <option value="" disabled selected></option>
+              <option value="U">U</option>
+              <option value="PG">PG</option>
+              <option value="12A">12A</option>
+              <option value="15">15</option>
+              <option value="18">18</option>
+            </select>
+          </div>
+ 
+          <div class="form-item">
+            <label for="rating" class="primary">Rating (out of 5):</label>
+            <select id="rating">
+              <option value="" disabled selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="category" class="primary">Category:</label>
+            <select id="category">
+              <option value="" disabled selected></option>
+              <option value="Film">Film</option>
+              <option value="TV Series">TV Series</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="save"/>
+      </form>
+  
+      <h1>Movie List</h1>
+      <ul id="movie-list"></ul>
+      <button id="delete">Delete All</button>
+    </body>
+</body>
+</html>
